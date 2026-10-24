@@ -103,6 +103,13 @@ gotm gotm_kw_era5.yaml
 ```
 Will run the simulation with a k-omega closure and forced with ERA 5 data. The output is stored in `ows_papa_kw_era5.nc`
 
+Note that the cvmix examples will not work with the build. For that we need to include the CVMix module when building GOTM by including 
+```
+-DGOTM_USE_CVMIX=true
+```
+when running CMake.
+
+More info at https://gotm.net/blog/cvmix/
 
 
 
